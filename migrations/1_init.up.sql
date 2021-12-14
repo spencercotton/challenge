@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `coupons` (
+    `id` VARCHAR(36) PRIMARY KEY NOT NULL,
+    `name` VARCHAR(100) NOT NULL,
+    `brand` VARCHAR(100) NOT NULL,
+    `value` INT NOT NULL,
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    `expiry` VARCHAR(36) NOT NULL
+);
